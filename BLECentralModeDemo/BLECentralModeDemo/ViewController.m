@@ -156,7 +156,7 @@ NSString *const NOTIFY_UUID = @"CDB49AF3-6B35-4102-AEE7-7398D1C46211";
         NSLog(@"Error writing characteristic value: %@", [error localizedDescription]);
     } else {
         NSLog(@"写外设值成功 %@", characteristic);
-//        [peripheral readValueForCharacteristic:characteristic]; // 读特征值，会响应didUpdateValueForCharacteristic方法
+        [peripheral readValueForCharacteristic:characteristic]; // 读特征值，会响应didUpdateValueForCharacteristic方法
     }
 }
 

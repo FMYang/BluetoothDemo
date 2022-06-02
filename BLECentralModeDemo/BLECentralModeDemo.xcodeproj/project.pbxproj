@@ -13,6 +13,8 @@
 		E4A18CB82847464D00A98596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A18CB72847464D00A98596 /* Assets.xcassets */; };
 		E4A18CBB2847464D00A98596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A18CB92847464D00A98596 /* LaunchScreen.storyboard */; };
 		E4A18CBE2847464D00A98596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A18CBD2847464D00A98596 /* main.m */; };
+		E4A18CC72848550200A98596 /* FMCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A18CC62848550200A98596 /* FMCentralManager.m */; };
+		E4A18CCA2848A91400A98596 /* FMBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A18CC92848A91400A98596 /* FMBluetoothManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E4A18CBA2847464D00A98596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4A18CBC2847464D00A98596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4A18CBD2847464D00A98596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4A18CC52848550200A98596 /* FMCentralManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMCentralManager.h; sourceTree = "<group>"; };
+		E4A18CC62848550200A98596 /* FMCentralManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMCentralManager.m; sourceTree = "<group>"; };
+		E4A18CC82848A91400A98596 /* FMBluetoothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMBluetoothManager.h; sourceTree = "<group>"; };
+		E4A18CC92848A91400A98596 /* FMBluetoothManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMBluetoothManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		E4A18CAA2847464A00A98596 /* BLECentralModeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E4A18CC4284854C900A98596 /* FMBluetoothKit */,
 				E4A18CAB2847464A00A98596 /* AppDelegate.h */,
 				E4A18CAC2847464A00A98596 /* AppDelegate.m */,
 				E4A18CB12847464A00A98596 /* ViewController.h */,
@@ -69,6 +76,17 @@
 				E4A18CBD2847464D00A98596 /* main.m */,
 			);
 			path = BLECentralModeDemo;
+			sourceTree = "<group>";
+		};
+		E4A18CC4284854C900A98596 /* FMBluetoothKit */ = {
+			isa = PBXGroup;
+			children = (
+				E4A18CC82848A91400A98596 /* FMBluetoothManager.h */,
+				E4A18CC92848A91400A98596 /* FMBluetoothManager.m */,
+				E4A18CC52848550200A98596 /* FMCentralManager.h */,
+				E4A18CC62848550200A98596 /* FMCentralManager.m */,
+			);
+			path = FMBluetoothKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A18CC72848550200A98596 /* FMCentralManager.m in Sources */,
 				E4A18CB32847464A00A98596 /* ViewController.m in Sources */,
 				E4A18CAD2847464A00A98596 /* AppDelegate.m in Sources */,
+				E4A18CCA2848A91400A98596 /* FMBluetoothManager.m in Sources */,
 				E4A18CBE2847464D00A98596 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
